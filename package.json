@@ -1,0 +1,19 @@
+{
+  "name": "required-prefixe-fisherman",
+  "version": "1.0.0",
+  "description": "Used to execute a command, only if the prefixe match with the one you want for the command",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fisherman",
+    "discord",
+    "middleware",
+    "plugin",
+    "required",
+    "command"
+  ],
+  "author": "Maxerbox/Simon Sassi",
+  "license": "ISC"
+}
