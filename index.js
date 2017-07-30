@@ -15,14 +15,14 @@ class RequiredPrefixe {
   }
   handle (req, res, next) {
     if (req.isCommand && req.command.locales.requiredPrefixe !== req.prefix) {
-      if (this.conf.sendCode) res.sendCode(this.conf.code, new InvalidPrefixeException(req.prefix, req.command.locales.requiredPrefixe, this.conf.code))
+      if (this.conf.sendCode) next(new InvalidPrefixeException(req.prefix, req.command.locales.requiredPrefixe, this.conf.code))
       else next(true)
     }
   }
 }
 /**
  * @typedef {Object} PrefixeOptions
- * @property {boolean} [sendCode=false] If it should sendCode with an InvalidPrefixeException when the prefixe is not respected
+ * @property {boolean} [sendCode=false] If it should throw an InvalidPrefixeException when the prefixe is not respected
  * @property {number} [code=405] The code sent if sendCode is set to true
  */
 module.exports = RequiredPrefixe
