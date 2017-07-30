@@ -9,7 +9,7 @@ const fisherman = require("fisherman-discord.js")
 var bot = new fisherman.Fisherman({prefixes: ["!", "cat!"]});
 const _reqPrefixe = require("required-prefixe-fisherman");
 var requirePrefixe = new _reqPrefixe({sendCode: true, code: 789}) //it will trigger the event fisherCode with a InvalidPrefixeException if the required prefixe is not respected
-//If sendCode is set to false, it will just block the middleware chain and don't trigger a fishercode
+//If sendCode is set to false, it will just block the middleware chain and doesn't trigger a fishercode
 bot.use(requirePrefixe);
 ```
 
