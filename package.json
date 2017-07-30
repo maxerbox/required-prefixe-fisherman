@@ -15,5 +15,9 @@
     "command"
   ],
   "author": "Maxerbox/Simon Sassi",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxerbox/fisherman-discord.js.git"
+  }
 }
